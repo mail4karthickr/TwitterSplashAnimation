@@ -14,6 +14,8 @@
 		77EF54B82210DE14002BBEBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77EF54B62210DE14002BBEBC /* LaunchScreen.storyboard */; };
 		77EF54C32210DE14002BBEBC /* TwitterSplashScreenAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF54C22210DE14002BBEBC /* TwitterSplashScreenAnimationTests.swift */; };
 		77EF54CE2210DE15002BBEBC /* TwitterSplashScreenAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF54CD2210DE15002BBEBC /* TwitterSplashScreenAnimationUITests.swift */; };
+		77EF54DC2210E0BB002BBEBC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EF54DB2210E0BB002BBEBC /* SplashView.swift */; };
+		77EF54E22210F3BD002BBEBC /* UIBezierPath+Shapes.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EF54E02210F3BD002BBEBC /* UIBezierPath+Shapes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		77EF54C92210DE15002BBEBC /* TwitterSplashScreenAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterSplashScreenAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EF54CD2210DE15002BBEBC /* TwitterSplashScreenAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSplashScreenAnimationUITests.swift; sourceTree = "<group>"; };
 		77EF54CF2210DE15002BBEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77EF54DB2210E0BB002BBEBC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		77EF54DF2210F3BC002BBEBC /* TwitterSplashScreenAnimation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitterSplashScreenAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
+		77EF54E02210F3BD002BBEBC /* UIBezierPath+Shapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Shapes.m"; sourceTree = "<group>"; };
+		77EF54E12210F3BD002BBEBC /* UIBezierPath+Shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Shapes.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,10 @@
 				77EF54B42210DE14002BBEBC /* Assets.xcassets */,
 				77EF54B62210DE14002BBEBC /* LaunchScreen.storyboard */,
 				77EF54B92210DE14002BBEBC /* Info.plist */,
+				77EF54E12210F3BD002BBEBC /* UIBezierPath+Shapes.h */,
+				77EF54E02210F3BD002BBEBC /* UIBezierPath+Shapes.m */,
+				77EF54DB2210E0BB002BBEBC /* SplashView.swift */,
+				77EF54DF2210F3BC002BBEBC /* TwitterSplashScreenAnimation-Bridging-Header.h */,
 			);
 			path = TwitterSplashScreenAnimation;
 			sourceTree = "<group>";
@@ -193,6 +203,7 @@
 				TargetAttributes = {
 					77EF54A92210DE13002BBEBC = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					77EF54BD2210DE14002BBEBC = {
 						CreatedOnToolsVersion = 10.1;
@@ -258,6 +269,8 @@
 			files = (
 				77EF54B02210DE13002BBEBC /* ViewController.swift in Sources */,
 				77EF54AE2210DE13002BBEBC /* AppDelegate.swift in Sources */,
+				77EF54DC2210E0BB002BBEBC /* SplashView.swift in Sources */,
+				77EF54E22210F3BD002BBEBC /* UIBezierPath+Shapes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TwitterSplashScreenAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,6 +454,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = g.TwitterSplashScreenAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TwitterSplashScreenAnimation/TwitterSplashScreenAnimation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TwitterSplashScreenAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,6 +474,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = g.TwitterSplashScreenAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TwitterSplashScreenAnimation/TwitterSplashScreenAnimation-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
